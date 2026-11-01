@@ -4,8 +4,13 @@
   "private": true,
   "description": "AmeerTech Data Hub demo with secure server-side customer registration and login",
   "main": "index.js",
-  "scripts": { "start": "node index.js", "dev": "node --watch index.js" },
-  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "better-sqlite3": "^11.7.0",
