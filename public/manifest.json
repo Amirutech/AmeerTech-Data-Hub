@@ -1,15 +1,1 @@
-{
-  "id": "/",
-  "name": "AmeerTech Data Hub",
-  "short_name": "AmeerTech",
-  "description": "Airtime and data top-up platform",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "portrait-primary",
-  "background_color": "#f5f7fb",
-  "theme_color": "#102f68",
-  "icons": [
-    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
-  ]
-}
+{"id":"/","name":"AmeerTech Data Hub","short_name":"AmeerTech","description":"Airtime and data top-up platform","start_url":"/","scope":"/","display":"standalone","orientation":"portrait-primary","background_color":"#f5f7fb","theme_color":"#102f68","icons":[{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}

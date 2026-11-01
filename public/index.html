@@ -1,75 +1,18 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102f68">
-  <meta name="description" content="AmeerTech Data Hub — airtime and data top-up platform.">
-  <title>AmeerTech Data Hub</title>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#"><span class="logo">A</span><span>AmeerTech <b>Data Hub</b></span></a>
-    <div class="top-actions"><button id="install-app" class="install-btn" hidden>Install App</button><span class="badge"><span class="status-dot"></span> DEMO MODE</span></div>
-  </header>
-  <main>
-    <section class="welcome">
-      <div>
-        <p class="eyebrow">WELCOME TO AMEERTECH</p>
-        <h1>Stay connected.<br><span>Anytime, anywhere.</span></h1>
-        <p class="intro">Your everyday hub for airtime and mobile data. Fast, simple, and made for you.</p>
-        <div class="hero-pills"><span>✓ Simple top-ups</span><span>✓ All major networks</span></div>
-      </div>
-      <div class="hero-art" aria-hidden="true"><div class="phone"><div class="phone-dot"></div><div class="signal">▮ ▮ ▮</div><div class="hero-circle">₦</div><div class="phone-line"></div><div class="phone-line short"></div></div></div>
-    </section>
-
-    <section class="notice"><strong>Preview only:</strong> no real payment or top-up will happen in this starter version. The website is designed to be installable on supported Android phones.</section>
-
-    <section class="stats">
-      <article class="stat"><span class="stat-icon">↗</span><div><small>Services</small><strong>2</strong><p>Airtime & Data</p></div></article>
-      <article class="stat"><span class="stat-icon">₦</span><div><small>Wallet balance</small><strong>₦0.00</strong><p>Connect payments to enable</p></div></article>
-      <article class="stat"><span class="stat-icon">✓</span><div><small>Account</small><strong>Getting started</strong><p>Secure sign-in comes next</p></div></article>
-    </section>
-
-    <section class="quick-services" aria-label="Quick services">
-      <button class="service-card selected" data-service="data" type="button"><span class="service-symbol data-symbol">▥</span><span><strong>Buy Data</strong><small>Browse data bundles</small></span><span class="service-arrow">↗</span></button>
-      <button class="service-card" data-service="airtime" type="button"><span class="service-symbol airtime-symbol">◉</span><span><strong>Buy Airtime</strong><small>Recharge any network</small></span><span class="service-arrow">↗</span></button>
-      <div class="service-card service-disabled"><span class="service-symbol history-symbol">↻</span><span><strong>Transactions</strong><small>Recent activity below</small></span><span class="service-arrow">↓</span></div>
-    </section>
-
-    <section class="content-grid">
-      <div class="panel">
-        <div class="section-title"><div><p class="eyebrow">QUICK PURCHASE</p><h2>Make a top-up</h2></div><span class="round-icon">＋</span></div>
-        <div class="tabs"><button class="tab active" data-type="data">Buy Data</button><button class="tab" data-type="airtime">Buy Airtime</button></div>
-        <form id="purchase-form">
-          <label for="network">Network provider</label>
-          <select id="network" required><option value="MTN">MTN</option><option value="Airtel">Airtel</option><option value="Glo">Glo</option><option value="9mobile">9mobile</option></select>
-          <label for="phone">Phone number</label>
-          <input id="phone" inputmode="numeric" autocomplete="tel" placeholder="08012345678" maxlength="11" required>
-          <div id="plan-wrap"><label for="plan">Choose data plan</label><select id="plan"><option value="mtn-1gb">1 GB — illustrative plan</option><option value="mtn-2gb">2 GB — illustrative plan</option><option value="mtn-5gb">5 GB — illustrative plan</option></select></div>
-          <label for="amount">Amount (₦)</label>
-          <input id="amount" type="number" min="50" max="50000" value="500" required>
-          <button class="primary" type="submit">Preview purchase <span>→</span></button>
-          <p class="helper"><span class="helper-dot"></span> Demo prices only. Real delivery will be enabled after API setup.</p>
-        </form>
-        <div id="result" class="result" role="status" hidden></div>
-      </div>
-      <div class="panel recent">
-        <div class="section-title"><div><p class="eyebrow">ACTIVITY</p><h2>Recent transactions</h2></div></div>
-        <div id="orders" class="orders"><div class="empty-icon">↻</div><h3>No transactions yet</h3><p>Your purchase previews will appear here.</p></div>
-        <button id="refresh" class="secondary">Refresh activity</button>
-      </div>
-    </section>
-    <section class="features">
-      <div><span>01</span><h3>Easy top-ups</h3><p>A clear, simple flow designed for phones and computers.</p></div>
-      <div><span>02</span><h3>Built for growth</h3><p>Ready to be extended with secure accounts and real provider APIs.</p></div>
-      <div><span>03</span><h3>Track activity</h3><p>Keep purchase references and transaction statuses in one place.</p></div>
-    </section>
-  </main>
-  <footer><span>© <span id="year"></span> AmeerTech Data Hub</span><span>Learn • Connect • Grow</span></footer>
-  <script src="/app.js"></script>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#102f68"><meta name="description" content="AmeerTech Data Hub — airtime and data top-up platform.">
+<title>AmeerTech Data Hub</title><link rel="manifest" href="/manifest.json"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+</head><body>
+<header class="topbar"><a class="brand" href="/"><span class="logo">A</span><span>AmeerTech <b>Data Hub</b></span></a><div class="top-actions"><a class="account-link" href="/account.html">Sign in / Register</a><button id="install-app" class="install-btn" hidden>Install App</button><span class="badge"><span class="status-dot"></span> DEMO MODE</span></div></header>
+<main>
+<section class="welcome"><div><p class="eyebrow">WELCOME TO AMEERTECH</p><h1>Stay connected.<br><span>Anytime, anywhere.</span></h1><p class="intro">Your everyday hub for airtime and mobile data. Fast, simple, and made for you.</p><div class="hero-pills"><span>✓ Simple top-ups</span><span>✓ All major networks</span></div></div><div class="hero-art" aria-hidden="true"><div class="phone"><div class="phone-dot"></div><div class="signal">▮ ▮ ▮</div><div class="hero-circle">₦</div><div class="phone-line"></div><div class="phone-line short"></div></div></div></section>
+<section class="notice"><strong>Preview only:</strong> no real payment or top-up will happen. Customer accounts are enabled on the backend, but wallet funding and real fulfilment are not yet available.</section>
+<section class="stats"><article class="stat"><span class="stat-icon">↗</span><div><small>Services</small><strong>2</strong><p>Airtime & Data</p></div></article><article class="stat"><span class="stat-icon">₦</span><div><small>Wallet balance</small><strong>₦0.00</strong><p>Payments not enabled</p></div></article><article class="stat"><span class="stat-icon">✓</span><div><small>Account</small><strong>Customer sign-in</strong><p><a href="/account.html">Register or sign in</a></p></div></article></section>
+<section class="quick-services" aria-label="Quick services"><button class="service-card selected" data-service="data" type="button"><span class="service-symbol data-symbol">▥</span><span><strong>Buy Data</strong><small>Browse data bundles</small></span><span class="service-arrow">↗</span></button><button class="service-card" data-service="airtime" type="button"><span class="service-symbol airtime-symbol">◉</span><span><strong>Buy Airtime</strong><small>Recharge any network</small></span><span class="service-arrow">↗</span></button><div class="service-card service-disabled"><span class="service-symbol history-symbol">↻</span><span><strong>Transactions</strong><small>Recent activity below</small></span><span class="service-arrow">↓</span></div></section>
+<section class="content-grid"><div class="panel"><div class="section-title"><div><p class="eyebrow">QUICK PURCHASE</p><h2>Make a top-up</h2></div><span class="round-icon">＋</span></div><div class="tabs"><button class="tab active" data-type="data" type="button">Buy Data</button><button class="tab" data-type="airtime" type="button">Buy Airtime</button></div>
+<form id="purchase-form"><label for="network">Network provider</label><select id="network" required><option value="MTN">MTN</option><option value="Airtel">Airtel</option><option value="Glo">Glo</option><option value="9mobile">9mobile</option></select><label for="phone">Phone number</label><input id="phone" inputmode="numeric" autocomplete="tel" placeholder="08012345678" maxlength="11" required><div id="plan-wrap"><label for="plan">Choose data plan</label><select id="plan"><option value="mtn-1gb">1 GB — illustrative plan</option><option value="mtn-2gb">2 GB — illustrative plan</option><option value="mtn-5gb">5 GB — illustrative plan</option></select></div><label for="amount">Amount (₦)</label><input id="amount" type="number" min="50" max="50000" value="500" required><button class="primary" type="submit">Preview purchase <span>→</span></button><p class="helper">Sign in is required. Demo prices only; no money will be charged and no service will be delivered.</p></form><div id="result" class="result" role="status" hidden></div></div>
+<div class="panel recent"><div class="section-title"><div><p class="eyebrow">ACTIVITY</p><h2>Recent transactions</h2></div></div><div id="orders" class="orders"><div class="empty-icon">↻</div><h3>Sign in to view activity</h3><p>Your preview history is private to your account.</p></div><button id="refresh" class="secondary" type="button">Refresh activity</button></div></section>
+<section class="features"><div><span>01</span><h3>Easy top-ups</h3><p>A clear, simple flow designed for phones and computers.</p></div><div><span>02</span><h3>Customer accounts</h3><p>Server-side password hashing and private sign-in sessions.</p></div><div><span>03</span><h3>Track activity</h3><p>Preview references are kept separately for each signed-in customer.</p></div></section>
+</main><footer><span>© <span id="year"></span> AmeerTech Data Hub</span><span>Learn • Connect • Grow</span></footer>
+<script src="/api-config.js"></script><script src="/app.js"></script>
+</body></html>

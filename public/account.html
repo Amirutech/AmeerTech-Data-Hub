@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10264f"><meta name="description" content="Create or access your AmeerTech Data Hub customer account.">
+  <title>Customer account | AmeerTech Data Hub</title>
+  <link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/account.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="logo">A</span><span>AmeerTech <b>Data Hub</b></span></a><a class="back-link" href="/">Back to home</a></header>
+  <main class="account-main">
+    <section class="account-card">
+      <p class="eyebrow">CUSTOMER ACCOUNT</p><h1>Welcome to <span>AmeerTech</span></h1>
+      <p class="account-intro">Create an account or sign in to view your personal demo dashboard.</p>
+      <div class="account-tabs" role="tablist"><button class="account-tab active" id="show-login" type="button">Sign in</button><button class="account-tab" id="show-register" type="button">Create account</button></div>
+      <form id="login-form" novalidate>
+        <label for="login-email">Email address</label><input id="login-email" type="email" autocomplete="email" maxlength="254" required>
+        <label for="login-password">Password</label><input id="login-password" type="password" autocomplete="current-password" required>
+        <button class="primary" type="submit">Sign in <span>→</span></button>
+      </form>
+      <form id="register-form" hidden novalidate>
+        <label for="register-name">Full name</label><input id="register-name" autocomplete="name" minlength="2" maxlength="80" required>
+        <label for="register-email">Email address</label><input id="register-email" type="email" autocomplete="email" maxlength="254" required>
+        <label for="register-password">Create password</label><input id="register-password" type="password" autocomplete="new-password" minlength="10" maxlength="72" required><p class="field-hint">Use at least 10 characters. Never share your password.</p>
+        <button class="primary" type="submit">Create account <span>→</span></button>
+      </form>
+      <div id="account-message" class="account-message" role="status" aria-live="polite" hidden></div>
+      <section id="customer-panel" class="customer-panel" hidden>
+        <div class="customer-avatar">A</div><p class="eyebrow">SIGNED IN</p><h2 id="customer-name">Customer</h2><p id="customer-email" class="account-intro"></p>
+        <p class="demo-warning">Your account is active, but wallet funding and real airtime/data purchases are not enabled yet.</p>
+        <a class="secondary-link" href="/">Go to dashboard</a><button id="logout-button" class="secondary logout-button" type="button">Sign out</button>
+      </section>
+      <p class="privacy-note">Demo platform. Do not use a password you use on another website.</p>
+    </section>
+  </main>
+  <script src="/api-config.js"></script><script src="/account.js"></script>
+</body></html>
